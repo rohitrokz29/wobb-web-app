@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 // component representing the hiring process 
@@ -58,6 +58,15 @@ const HiringProcess = () => {
         );
     };
 
+    useEffect(() => {
+        const changeInterval = setInterval(() => {
+            goRight();
+        }, 2000);
+        return () => {
+            clearTimeout(changeInterval);
+        }
+    }, []);
+
     return (<>
         <section className="py-12  bg-blue-100 flex flex-col items-center ">
             <h3 className="text-3xl font-semibold text-center ">How it works</h3>
@@ -84,7 +93,7 @@ const HiringProcess = () => {
                             className="flex-shrink-0 w-full flex justify-center items-center"
                         >
                             <div className="w-[75vw] p-6 px-4 bg-white shadow-lg rounded-lg">
-                               {/* Stepbox -card representing the process step */}
+                                {/* Stepbox -card representing the process step */}
                                 <StepBox {...card} stepNo={index + 1} />
                             </div>
                         </div>

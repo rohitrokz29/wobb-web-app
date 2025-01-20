@@ -84,6 +84,15 @@ const ActiveTopCampaigns = () => {
         }, 950);
     }
 
+    useEffect(() => {
+        const changeInterval = setInterval(() => {
+            handleNext()
+        }, 2000);
+        return () => {
+            clearTimeout(changeInterval);
+        }
+    }, []);
+
     return (
         <section className="py-12  bg-gray-100 flex flex-col items-center space-y-8">
             <h3 className="text-3xl font-semibold text-center ">Active Top Campaigns</h3>
