@@ -1,18 +1,19 @@
 
-# Wobb Influencer Marketing Platform - Homepage
-
+# Wobb Influencer Marketing Platform - Homepage 
 
 This project is a responsive and visually engaging homepage for Wobb, an influencer marketing platform. The homepage serves as a centralized hub for influencers, providing key information about active campaigns. Influencers can browse campaigns, view essential details, and decide which ones suit their niche for collaboration.
+
 ## Features
 
 - Display of all active campaigns.
 - Essential campaign details, including: Brand name.Payout types,Hiring progress.
-- Fully responsive design optimized for web browsers.
+- Fully responsive design optimized for web browsers and other devices.
 - Campaign-specific visuals and descriptions.
 
 This project was created as part of the React.js Developer Intern assignment for Wobb AI.
 
-
+## Deployment 
+The application is deployed over the vercel platform. You can visit [here](https://wobbaiassignment.vercel.app/).
 
 ## Tech Stack
 
